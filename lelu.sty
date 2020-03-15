@@ -1,20 +1,13 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{lelu}[2020/03/15 Lelu Package]
 
+\RequirePackage{kvoptions}
 
-\providecommand\secpar{}
+\DeclareStringOption[\lambda]{secpar}
 
-\DeclareOption{lambda}{
-  \renewcommand{\secpar}{\lambda}
-}
+\ProcessKeyvalOptions*
 
-\DeclareOption{n}{
-  \renewcommand{\secpar}{n}
-}
-
-\ExecuteOptions{lambda}
-
-\ProcessOptions\relax
+\newcommand{\secpar}{\lelu@secpar}
 
 % styles
 \newcommand{\neglstyle}[1]{\mathrm{#1}}
@@ -22,11 +15,11 @@
 % security parameter 1^n
 \newcommand{\secparam}{1^\secpar}
 
-% computational / statistical distance
+% computational and statistical distance
 \newcommand{\cclose}{\approx_c}
 \newcommand{\sclose}{\approx_s}
 
-% uniformously sample
+% sample at random
 \newcommand{\samples}{\leftarrow_\$}
 
 % negligible
