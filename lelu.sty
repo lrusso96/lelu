@@ -2,6 +2,8 @@
 \ProvidesPackage{lelu}[2020/03/15 Lelu Package]
 
 \RequirePackage{kvoptions}
+\RequirePackage{amsfonts}
+
 
 \DeclareStringOption[\lambda]{secpar}
 
@@ -11,6 +13,7 @@
 
 % styles
 \newcommand{\neglstyle}[1]{\mathrm{#1}}
+\newcommand{\polystyle}[1]{\mathrm{#1}}
 
 % security parameter 1^n
 \newcommand{\secparam}{1^\secpar}
@@ -25,4 +28,18 @@
 % negligible
 \newcommand{\negl}[1][\secpar]{
   \neglstyle{negl}({#1})}
+
+% poly
+\newcommand{\poly}[1][\secpar]{
+  \polystyle{poly}({#1})}
+
+% set and bits
+\newcommand{\set}[3][\secpar]{{\{#2, #3\}^{#1}}}
+\newcommand{\bits}[1][\secpar]{\set[#1]{0}{1}}
+
+% numerical sets
+\newcommand{\numset}[1]{\mathbb #1}
+\newcommand{\Nset}{\numset N}
+\newcommand{\Zset}{\numset Z}
+
 \endinput

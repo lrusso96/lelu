@@ -1,3 +1,3 @@
-# lelu
+# lelu :monkey:
 
-LaTeX package for lelu.
+A simple LaTeX package for Lelù.
