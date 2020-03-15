@@ -1,1 +1,3 @@
-lelu
+# lelu
+
+LaTeX package for lelu.
