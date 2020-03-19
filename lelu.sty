@@ -3,7 +3,7 @@
 
 \RequirePackage{kvoptions}
 \RequirePackage{amsfonts}
-
+\RequirePackage{amstext}
 
 \DeclareStringOption[\lambda]{secpar}
 
@@ -15,6 +15,7 @@
 \newcommand{\neglstyle}[1]{\mathrm{#1}}
 \newcommand{\polystyle}[1]{\mathrm{#1}}
 \newcommand{\advstyle}[1]{\mathcal{#1}}
+\newcommand{\notionstyle}[1]{\ensuremath{\mathrm{#1}}}
 
 % security parameter 1^n
 \newcommand{\secparam}{1^\secpar}
@@ -46,4 +47,9 @@
 
 % adversaries
 \newcommand{\adv}[1][A]{\advstyle{#1}}
+% Basic crypto notions
+\newcommand{\notion}[2]{\notionstyle{#1 {\text -}#2}}
+\newcommand{\indNotion}[1]{\notion{IND}{#1}}
+\newcommand{\indCPA}{\indNotion{CPA}}
+\newcommand{\indCCA}{\indNotion{CCA}}
 \endinput
