@@ -2,7 +2,7 @@
 
 A simple LaTeX package for Lelù.
 
-## Supported commands
+## Supported commands (stub)
 
 - setup a security parameter
 - sets and binary domain
@@ -11,3 +11,9 @@ A simple LaTeX package for Lelù.
 - adversaries
 - Landau notation
 - IND notation
+
+## Dependencies
+
+- amsfonts
+- amstext
+- kvoptions
