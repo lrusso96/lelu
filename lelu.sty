@@ -19,8 +19,9 @@
 \newcommand{\secparam}{1^\secpar}
 
 % computational and statistical distance
-\newcommand{\cclose}{\approx_c}
-\newcommand{\sclose}{\approx_s}
+\newcommand{\xclose}[1]{\approx_{#1}}
+\newcommand{\cclose}{\xclose c}
+\newcommand{\sclose}{\xclose s}
 
 % sample at random
 \newcommand{\samples}{\leftarrow_\$}
