@@ -11,6 +11,8 @@ A simple LaTeX package for Lelù.
 - adversaries
 - Landau notation
 - IND notation
+- algorithms
+- keys
 
 ## Dependencies
 

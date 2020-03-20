@@ -17,6 +17,7 @@
 \newcommand{\advstyle}[1]{\mathcal{#1}}
 \newcommand{\notionstyle}[1]{\ensuremath{\mathrm{#1}}}
 \newcommand{\algstyle}[1]{\ensuremath{\mathsf{#1}}}
+\newcommand{\keystyle}[1]{\ensuremath{\mathsf{#1}}}
 
 % security parameter 1^n
 \newcommand{\secparam}{1^\secpar}
@@ -68,4 +69,9 @@
 \newcommand{\Sign}{\algX{Sign}}
 \newcommand{\Vrfy}{\algX{Vrfy}}
 
+% Keys
+\newcommand{\keyX}[1]{\keystyle{#1}}
+\newcommand{\pk}{\keyX{pk}}
+\newcommand{\sk}{\keyX{sk}}
+\newcommand{\vk}{\keyX{vk}}
 \endinput
