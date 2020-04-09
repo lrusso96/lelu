@@ -1,4 +1,6 @@
 # lelu :monkey:
+[![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-008080.svg)](https://www.latex-project.org/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 A simple LaTeX package for Lelù.
 
